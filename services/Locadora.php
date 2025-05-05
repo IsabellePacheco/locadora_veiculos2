@@ -121,9 +121,17 @@ class Locadora {
         return "Veiculo já disponivel ou não encontrado.";
     }
 
-    
+
     // Retornar a lista de veículos
+
+    public function listarVeiculos(): array{
+
+        return $this->veiculos;
+    }
+
     // Calcular previsão do valor
+
+    
 }
 
 ?>
