@@ -151,8 +151,7 @@ $usuario = Auth::getUsuario();
                                     <option value="empty"></option>
                                     <option value="carro">Carro</option>
                                     <option value="moto">Moto</option>
-                                    <option value="caminhão">Caminhão</option>
-                                    <option value="van">Van</option>
+                                    <option>
                                 </select>
                             </div>
                             <button class="btn btn-primary w-100" type="submit" name="adicionar">Adicionar veículo</button>
@@ -164,7 +163,7 @@ $usuario = Auth::getUsuario();
             <?php endif;?>
 
             <!-- Calculo de previsão de aluguel -->
-            <div class="col md-6">
+            <div class="col-<?=Auth::isAdmin() ? 'md-6': '12'?>">
                 <div class="card h-100">
                     <div class="card-header">
                         <h4 class="mb-0">Calcular a previsão de aluguel 💵</h4>
@@ -179,8 +178,7 @@ $usuario = Auth::getUsuario();
                                     <option value="empty"></option>
                                     <option value="carro">Carro</option>
                                     <option value="moto">Moto</option>
-                                    <option value="caminhão">Caminhão</option>
-                                    <option value="van">Van</option>
+                                    <option>
                                 </select>
                             </div>
                             <div class="mb-3">
