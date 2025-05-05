@@ -104,8 +104,8 @@ class Locadora {
     }
 
     // Devolver veículo
-
     public function devolverVeiculo(string $modelo) :string{
+
         // percorrer a lista
         foreach($this->veiculos as $veiculo){
 
@@ -123,15 +123,21 @@ class Locadora {
 
 
     // Retornar a lista de veículos
-
     public function listarVeiculos(): array{
 
         return $this->veiculos;
     }
 
     // Calcular previsão do valor
+    public function calcularPrevisaoAluguel(string $tipo, int $dias): float{
 
-    
+        if($tipo='Carro'){
+            return (new Carro('', ''))->calcularAluguel($dias);
+
+        }
+        return (new Moto('', ''))->calcularAluguel($dias);
+    }
+
 }
 
 ?>
