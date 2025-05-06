@@ -23,7 +23,7 @@ $auth = new Auth();
 if (Auth::verificarLogin()){
 
     // redirecionar para a página inicial
-    header('Location: /index.php');
+    header('Location:index.php');
     exit;
 
 }
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // verificar se o usuário e a senha estão corretos
     if ($auth->login($username, $password)) {
         // redirecionar para a página inicial
-        header('Location: /index.php');
+        header('Location: index.php');
         exit;
     } else {
         // exibir mensagem de erro
