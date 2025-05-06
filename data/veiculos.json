@@ -1,29 +1,26 @@
 [
     {
-        "tipo": "Carro",
-        "modelo": "Ferrari",
-        "placa": "AAA7A77",
-        "disponivel": false
-    },
-
-    {
         "tipo": "Moto",
         "modelo": "Harley Davidson",
         "placa": "BBB5G99",
         "disponivel": true
     },
-
     {
         "tipo": "Moto",
         "modelo": "kawasaki",
         "placa": "CCC7G33",
         "disponivel": false
     },
-
     {
         "tipo": "Carro",
         "modelo": "BMW M4",
         "placa": "DDD9m50",
+        "disponivel": true
+    },
+    {
+        "tipo": "Carro",
+        "modelo": "Ferrari",
+        "placa": "AAA7A77",
         "disponivel": true
     }
 ]
