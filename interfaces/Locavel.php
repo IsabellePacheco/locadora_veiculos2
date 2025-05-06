@@ -6,7 +6,6 @@ namespace Interfaces;
 interface Locavel {
     public function alugar() : string;
     public function devolver() : string;
-    public function isDisponivel() : bool;
+    public function isDisponivel(): bool;
 }
 
-?>
