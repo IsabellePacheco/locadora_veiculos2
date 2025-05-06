@@ -10,5 +10,3 @@ return array(
     'Models\\' => array($baseDir . '/models'),
     'Interfaces\\' => array($baseDir . '/interfaces'),
 );
-
-
